@@ -1,0 +1,68 @@
+# Terraform .gitignore
+**/.terraform/*
+!.terraform/modules/
+
+# Ignore override files as they are usually used to override resources in development
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Include lock files to ensure a consistent state
+# Comment out to ignore `.terraform.lock.hcl` files
+# .terraform.lock.hcl
+
+# Ignore sensitive variables stored in tfvars files
+*.tfvars
+*.tfvars.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore crash log files
+crash.log
+
+# Ignore state files
+*.tfstate
+*.tfstate.*
+
+# Python .gitignore
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder Project Settings
+.spyderproject
+.spyproject
+
+# Rope Project Settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
